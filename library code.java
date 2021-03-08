@@ -188,3 +188,40 @@ public class Library
      
       }
       int choice,c;
+      public static void main(String[] args){
+        Library u=new Library();
+               u.names();
+                int c;
+        do{ 
+            
+             System.out.println("*************WELCOME TO LIBRARY MANAGEMENT SYSTEM************");
+             System.out.println("1.ADD BOOKS");
+             System.out.println("2.SHOW BOOKS");
+             System.out.println("3.ISSUE BOOKS");
+             System.out.println("4.RETURN BOOKS");
+             System.out.println("5.EXIT");
+             Scanner d=new Scanner(System.in);
+             System.out.println("Enter your choice");
+              int choice =d.nextInt();
+             switch(choice)
+             {
+                 case 1: u.add();
+                     break;
+                 case 2: u.Show();
+                     break;
+                 case 3: u.issue();
+                     break;
+                 case 4:u.returns();
+                     break;
+                 case 5:
+                  break;
+            default:System.out.println("Invalid input");        
+        }
+        System.out.println("Do you want to continue 1 for yes 0 for no (1/0)");
+         Scanner s=new Scanner(System.in);
+          c=s.nextInt();
+        
+         }while(c==1);
+    }
+    }
+    
