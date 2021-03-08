@@ -102,3 +102,17 @@ public class Library
          w++;
      }
      }
+     void Show()
+     {
+         System.out.println("**********Available Books ***************");
+        int z=0;
+        while(books[z]!=null)
+        {
+            System.out.println(books[z]);
+             z++;
+        } 
+        for(k=0;k<n;k++)
+        {
+            System.out.println(X[k]);   
+        }   
+     }
