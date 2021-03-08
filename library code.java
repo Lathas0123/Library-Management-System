@@ -72,4 +72,33 @@ public class Library
                exit(0);
             }
      }
-  
+     void add()
+     {
+         System.out.println("Enter Sponser Book Details");
+         System.out.println("Enter how many books u want to sponser");
+         n=d.nextInt();
+      while(i<n)
+       { 
+        System.out.println("Enter Book Name");
+         x=d.next();
+         d.nextLine();
+         System.out.println("Enter code");
+         int xy=d.nextInt();
+         System.out.println("Enter Author Name");
+         x1=d.next();
+         System.out.println("Enter Book Prize");
+         p=d.nextInt();
+       
+          X[i]=x;
+          code[i]=xy;
+       X1[i]=x1;
+       P[i]=p;
+       i++;
+       }
+       int w=0;
+       while(w<i)
+       {
+         System.out.println(X[w]+"\t"+code[w]+" "+X1[w]+"\t"+P[w]);
+         w++;
+     }
+     }
