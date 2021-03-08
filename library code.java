@@ -116,3 +116,46 @@ public class Library
             System.out.println(X[k]);   
         }   
      }
+     void issue()
+      {
+          
+          Scanner d=new Scanner(System.in); 
+          System.out.println("Enter how many books you want to take");
+          no=d.nextInt();
+          while(u<no)
+          {
+              System.out.println("Enter your Book ");
+              issue=d.next();
+              System.out.println("Enter issue date:");
+              String date=d.next();
+              //d.next();
+               System.out.println("Enter return date:");
+              String date1=d.next();
+              issuebooks[u]=issue;
+              Idate[u]=date;
+              Rdate[u]=date1;
+              u++;
+                
+          }
+         int bag=0;
+          for(l=0;l<8;l++)
+          {
+         if(issue.equals(books[l]))
+         {
+             System.out.println("succesfully recieved");
+              bag=1;
+              books[l]="null";
+              break;
+         }
+         }
+         if(bag==0)
+          {
+              System.out.println("invalid book searching");
+             
+            }
+         for(w=0;w<u;w++)
+         {
+             System.out.println(issuebooks[w]+" "+Idate[w]+" "+Rdate[w]);
+         }
+    
+          }
