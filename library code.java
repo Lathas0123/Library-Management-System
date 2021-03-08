@@ -40,3 +40,36 @@ public class Library
        books[6]="7.c";
        books[7]="8.c++";
     }
+    void names()
+    {
+        username[0]="latha";
+        password[0]="latha123";
+        username[1]="suma";
+        password[1]="suma123";
+        username[2]="appi";
+        password[2]="appi123";
+        username[4]="rishik";
+        password[4]="rishik143";
+        System.out.println("******WELCOME TO LOGIN PAGE******");
+      System.out.println("Enter your name");
+      a=d.nextLine();
+      System.out.println("Enter your password");
+      b=d.nextLine();
+      int j=5;
+      j++;
+      int flag=0;
+      for(int g=0;g<j;g++)
+      {
+      if(a.equals(username[g])&&b.equals(password[g]))
+       {
+       System.out.println("welcome");
+       flag=1;
+        }
+      }
+        if(flag==0)
+          {
+              System.out.println("invalid username");
+               exit(0);
+            }
+     }
+  
