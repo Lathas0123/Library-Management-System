@@ -159,3 +159,32 @@ public class Library
          }
     
           }
+          void returns()
+      {
+          int num;
+          Scanner d1=new Scanner(System.in); 
+          System.out.println("Enter how many books you want to return");
+          num=d1.nextInt();
+           while(u1<num)
+          {
+              System.out.println("Enter your Book ");
+              ret=d.next();
+              
+              System.out.println("Enter code:");
+              int date2=d.nextInt();
+              System.out.println("Enter return date");
+               String Rd=d.next();
+              u1++;
+              for(int del=0;del<num;del++)
+              {
+              if(ret.equals(issuebooks[del])&&Rd.equals(Rdate[del]))
+              {
+                  System.out.println("Succesfully Received");
+                  books[date2]=ret;
+                  
+              }
+              }
+          }
+     
+      }
+      int choice,c;
