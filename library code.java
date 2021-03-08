@@ -29,3 +29,14 @@ public class Library
      String name ,a,b;
     boolean t;
     Scanner d=new Scanner(System.in);
+    Library()
+    {
+         books[0]="1.Times of India";
+       books[1]="2.India 2020";
+       books[2]="3.Wings of Fire";
+       books[3]="4.Designing books";
+       books[4]="5.programming Developement books";
+       books[5]="6.python";
+       books[6]="7.c";
+       books[7]="8.c++";
+    }
